@@ -1,5 +1,5 @@
 #!/bin/bash
-# Change DNS with one click (DNS Changer) - v3.0
+# Change DNS with one click (DNS Changer) - v1.0.0
 # Author: https://github.com/AAMoghanloo
 
 clear
@@ -30,7 +30,7 @@ echo ""
 echo -e "$(center_text 'Change DNS with one click')"
 echo -ne "${NC}"
 echo ""
-echo -e "  ${LIGHT_GREEN}Script Version:${NC} ${YELLOW}3.0${NC}"
+echo -e "  ${LIGHT_GREEN}Script Version:${NC} ${YELLOW}1.0.0${NC}"
 printf "${CYAN_BOLD}%*s\n${NC}" "$cols" '' | tr ' ' '_'
 printf "${CYAN_BOLD}%*s\n${NC}" "$cols" '' | tr ' ' '_'
 
