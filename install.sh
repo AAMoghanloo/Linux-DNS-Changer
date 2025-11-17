@@ -47,7 +47,7 @@ if sudo mv "${TEMP_FILE}" "${INSTALL_PATH}"; then
     printf "${CYAN_BOLD}%*s\n${NC}" "$cols" '' | tr ' ' '_'
     echo ""
     echo -e "  ${YELLOW}Now you can manage the script by typing 'dns' command.${END}"
-    echo -e "  ${YELLOW}e.g.${END} root@$(hostname):~# ${BLUE}6in4${END}"
+    echo -e "  ${YELLOW}e.g.${END} root@$(hostname):~# ${BLUE}dns${END}"
     printf "${CYAN_BOLD}%*s\n${NC}" "$cols" '' | tr ' ' '_'
     printf "${CYAN_BOLD}%*s\n${NC}" "$cols" '' | tr ' ' '_'
 else
