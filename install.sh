@@ -20,17 +20,18 @@ SCRIPT_URL="https://raw.githubusercontent.com/aamoghanloo/linux-dns-changer/main
 INSTALL_PATH="/usr/local/bin/dns"
 TEMP_FILE="/tmp/dns_script_download_$$.sh"
 
+echo ""
 echo -e "  ${CYAN_BOLD}Starting DNS Changer script installation...${NC}\n"
 
-echo -e "  ${YELLOW}Downloading script from GitHub: https://raw.githubusercontent.com/aamoghanloo${NC}\n"
+echo -e "  ${YELLOW}Downloading script from GitHub: https://raw.githubusercontent.com/aamoghanloo${NC}"
 if curl -Ls "${SCRIPT_URL}" -o "${TEMP_FILE}"; then
-    echo -e "  ${GREEN}Download successful.${NC}"
+    echo -e "  ${GREEN}Download successful.${NC}\n"
 else
     echo -e "  ${RED}ERROR: Failed to download the script.${NC}\n"
     exit 1
 fi
 
-echo -e "  ${YELLOW}Setting executable permissions for the script...${NC}\n"
+echo -e "  ${YELLOW}Setting executable permissions for the script...${NC}"
 chmod +x "${TEMP_FILE}"
 
 echo -e "  ${YELLOW}Copying script to ${CYAN_BOLD}${INSTALL_PATH}${YELLOW}... (Requires sudo)${NC}\n"
@@ -44,6 +45,7 @@ if sudo mv "${TEMP_FILE}" "${INSTALL_PATH}"; then
     echo -e "  ${LIGHT_GREEN}Installation successful! The script is now available as 'dns'.${NC}\n"
     printf "${CYAN_BOLD}%*s\n${NC}" "$cols" '' | tr ' ' '_'
     printf "${CYAN_BOLD}%*s\n${NC}" "$cols" '' | tr ' ' '_'
+    echo ""
     echo -e "  ${YELLOW}Now you can manage the script by typing 'dns' command.${END}"
     echo -e "  ${YELLOW}e.g.${END} root@$(hostname):~# ${BLUE}6in4${END}"
     printf "${CYAN_BOLD}%*s\n${NC}" "$cols" '' | tr ' ' '_'
