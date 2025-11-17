@@ -1,5 +1,5 @@
 #!/bin/bash
-# Change DNS with one click (DNS Changer) - v1.0.0
+# Change DNS with one click (DNS Changer)
 # Author: https://github.com/AAMoghanloo
 
 clear
@@ -27,10 +27,9 @@ echo -e "$(center_text '░█▀▀▄ ░█▄─░█ ░█▀▀▀█ �
 echo -e "$(center_text '░█─░█ ░█░█░█ ─▀▀▀▄▄ 　 ░█─── ░█▀▀█ ░█▄▄█ ░█░█░█ ░█─▄▄ ░█▀▀▀ ░█▄▄▀')"
 echo -e "$(center_text '░█▄▄▀ ░█──▀█ ░█▄▄▄█ 　 ░█▄▄█ ░█─░█ ░█─░█ ░█──▀█ ░█▄▄█ ░█▄▄▄ ░█─░█')"
 echo ""
-echo -e "$(center_text 'Change DNS with one click')"
 echo -ne "${NC}"
 echo ""
-echo -e "  ${LIGHT_GREEN}Script Version:${NC} ${YELLOW}1.0.0${NC}"
+echo -e "  ${LIGHT_GREEN}Author${NC} ${YELLOW}https://github.com/AAMoghanloo${NC}"
 printf "${CYAN_BOLD}%*s\n${NC}" "$cols" '' | tr ' ' '_'
 printf "${CYAN_BOLD}%*s\n${NC}" "$cols" '' | tr ' ' '_'
 
