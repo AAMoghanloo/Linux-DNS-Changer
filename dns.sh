@@ -29,7 +29,7 @@ echo -e "$(center_text '░█▄▄▀ ░█──▀█ ░█▄▄▄█ �
 echo ""
 echo -ne "${NC}"
 echo ""
-echo -e "  ${LIGHT_GREEN}Author${NC} ${YELLOW}https://github.com/AAMoghanloo${NC}"
+echo -e "  ${LIGHT_GREEN}Author${NC}: ${YELLOW}https://github.com/AAMoghanloo${NC}"
 printf "${CYAN_BOLD}%*s\n${NC}" "$cols" '' | tr ' ' '_'
 printf "${CYAN_BOLD}%*s\n${NC}" "$cols" '' | tr ' ' '_'
 
